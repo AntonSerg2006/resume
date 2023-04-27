@@ -7,65 +7,94 @@
     <meta name="keywords" content="сайт,резюме,html,css">
     <meta name="description" content="Это мой первый сайт-резюме">
     <title>Anton resume</title>
+    <link rel="stylesheet" href="resume.css">
 </head>
-<body>
-    <hr color="blue" size="5">
-    <img src="https://sun6-23.userapi.com/s/v1/ig2/AdRfbXHmvVHgeXUOKVgeyXSh8HbawMyqTzRu0zQx-ncYahSGAs9muLPOVdpGpmU2R7UEPq1bKjby0SQHIWRY1yL_.jpg?size=1701x1701&quality=95&crop=210,0,1701,1701&ava=1" alt="my avatar" width="300" >
-    <h1><em>Сергиенко Антон</em></h1>
-    <hr color="blue" size="5">
-    <p>Я <strong><em>ученик 11 класса</em></strong>, хочу научиться <strong>веб-программированию</strong>.</p>
+
+ <body>
+
+    <div class="container">
     
-    <p><em>Я люблю видеоигры,спорт и изучать что-то новое.</em> </p>
-    <hr color="blue" size="5">
+            <div class="info">
 
-    <h3>Список социальных сетей:</h3>
-        <a href="https://t.me/bBerserkkk" target="_blank">Telegram</a>
-    |
-        <a href="https://www.instagram.com/serg_anton_/" target="_blank">Instagram</a>
-    <hr color="blue" size="5">
-    <h2>Мои хобби:</h2>
-    <ol>
-        <li>Мотоспорт</li>
-        <li>Путешествия</li>
-        <li>Велоспрот</li>
-    </ol>
-    <hr color="blue" size="5">
-    <h2>Опыт работы</h2>
-    <table width="500">
-        <thead>
-       
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Год</th>                       
-        </thead> 
-        <tbody>
-            <tr>
-                <td>Ученик</td>
-                <td>11 классник</td>
-                <td>2022-2023</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr color="blue" size="5">
+                    <img src="guts.jpg" alt="my avatar" class="avatar" >
+
+                    
+                    
+                    
+                <div class="info-text">
+                    <h1><em>Сергиенко Антон</em></h1>
+                    
+                    <p>Я <strong><em>ученик 11 класса</em></strong>, хочу научиться <strong>веб-программированию</strong>.</p>
+                    
+                    <p><em>Я люблю видеоигры,спорт и изучать что-то новое.</em> </p>
+
+                    
+                    
+                        <h3>Список социальных сетей:</h3>
+                    
+                            <a href="https://t.me/bBerserkkk" target="_blank">Telegram</a>
+                            |
+                            <a href="https://www.instagram.com/serg_anton_/" target="_blank">Instagram</a>
+                </div>
+            </div>         
+
+                <div class="card bc-red ">
+                    <h2>Мои хобби:</h2>
+                        <ol class="list">
+                            <li>Мотоспорт</li>
+                            <li>Путешествия</li>
+                            <li>Велоспорт</li>
+                        </ol>
+                </div>
+
+                <div class="card bc-blue">
+                    <h2>Опыт работы</h2>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Ученик</td>
+                                    <td>11 классник</td>
+                                    <td>2022-2023</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+    </div>        
 
     <div>
-<label for="name">Ваше имя:</label>
-<input type="name" id="name" placeholder="Введите имя">
+
+        <form action="/" class="form">
+            
+                 <h1>Связаться со мной</h1>
+
+                     <div class="form-row">
+
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="name" id="name" placeholder="Введите имя">
+                </div>        
+
+
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            
+                     </div>
+
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                  
+                    <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn">Отправить!</button>
+                </div>
+
+        </form>
+    
     </div>
 
-    <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email">
-    </div>
-
-    <div>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-    </div>
-
-    <button type="submit">Отправить!</button>
-
-    <hr color="blue" size="5">
-</body>
+ </body>
 </html>
